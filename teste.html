@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Slot Machine</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="slot-container">
+    <h1>🎰 SLOT MACHINE 🎰</h1>
+
+    <div class="money-panel">
+      <p>💰 Saldo: R$ <span id="balance">100</span></p>
+      <input type="number" id="betAmount" placeholder="Valor da aposta" min="1" />
+      <button id="addMoney">Adicionar R$50</button>
+    </div>
+
+    <div class="slots">
+      <div class="slot" id="slot1">❓</div>
+      <div class="slot" id="slot2">❓</div>
+      <div class="slot" id="slot3">❓</div>
+    </div>
+
+    <button id="spinBtn">GIRAR</button>
+    <p id="result"></p>
+  </div>
+
+  <!-- SONS -->
+  <audio id="spinSound" src="teste/click.wav"></audio>
+  <audio id="winSound" src="teste/win.mp3"></audio>
+  <audio id="loseSound" src="teste/lose.wav"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
